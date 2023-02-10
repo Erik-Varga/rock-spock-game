@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
+
+:root {
+  --box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+  --background-color: whitesmoke;
+  --secondary-color: #E16F00;
+  --border-radius: 5px;
+  /* --border-color: #EBBB40; */
+  /* --border-color: #144fc6; */
+  /* --fill-color: #6ab3f8; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* height: 100vh; */
+  margin: 10px;
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+}
+
+footer,
+footer a {
+  font-family: 'Poppins', sans-serif;
+  color: gray;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  border: 1px solid gray;
+  text-align: center;
+  padding: 10px;
+  /* margin: 15px; */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+} 
+
+.header {
+  background-color: dodgerblue;
+  border-radius: var(--border-radius);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.round-container {
+  margin-top: 5px;
+}
+
+
+.player-container {
+  margin: 15px;
+}
+
+h3 {
+  margin-bottom: 2px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 40px;
+  User-select: none;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.player:hover {
+  border: 1px solid dodgerblue;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+}
+
+#player .far,
+#player .choice {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+#computer .far,
+#computer .choice {
+  color: rgb(235, 43, 52);
+}
+
+#player .far:last-of-type,
+#computer .far:last-of-type {
+  margin-right: 0;
+}
+
+.selected {
+  color: black !important;
+  transition: 0.3s;
+}
+
+.stats-container {
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: 'Source Code Pro', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  gap: 5px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: dodgerblue;
+  color: white;
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  /* margin-left: 50px; */
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 1.5rem;
+  margin: unset;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.summary-text {
+  text-transform: capitalize;
+}
+
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 95%;
+    /* height: 580px; */
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 15px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    /* margin-top: 25px; */
+    /* margin-left: 25px; */
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    /* height: 550px; */
+    height: auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .far {
+    font-size: 43px;
+    margin-right: 5px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
