@@ -189,7 +189,11 @@ button:focus {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 1.25rem;
+  }
+
+  header {
+    font-size: 1.0rem;
   }
 
   .player-container {
@@ -214,7 +218,11 @@ button:focus {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 1.25rem;
+  }
+
+  header {
+    font-size: 1.0rem;
   }
 
   .player-container {
