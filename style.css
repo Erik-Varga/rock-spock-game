@@ -189,11 +189,20 @@ button:focus {
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+  }
+
+  .header {
+    padding: 3px;
+    height: auto;
   }
 
   header {
     font-size: 1.0rem;
+  }
+
+  .stats-container, .icons, .result-container {
+    font-size: 0.8rem;
   }
 
   .player-container {
@@ -223,6 +232,10 @@ button:focus {
 
   header {
     font-size: 1.0rem;
+  }
+
+  .stats-container {
+    font-size: 0.8rem;
   }
 
   .player-container {
