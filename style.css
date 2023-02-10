@@ -200,7 +200,7 @@ button:focus {
     font-size: 0.75rem;
   }
 
-  .stats-container, .icons, .result-container {
+  .fas, .stats-container, .icons, .result-container {
     font-size: 0.8rem;
   }
 
@@ -233,7 +233,7 @@ button:focus {
     font-size: 1.0rem;
   }
 
-  .stats-container {
+  .fas, .stats-container, .icons, .result-container {
     font-size: 0.8rem;
   }
 
