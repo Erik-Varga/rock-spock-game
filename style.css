@@ -196,7 +196,7 @@ button:focus {
     height: auto;
   }
 
-  header {
+  header, .header {
     font-size: 0.75rem;
   }
 
